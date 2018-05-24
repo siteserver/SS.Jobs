@@ -1,18 +1,19 @@
-# SiteServer Cli 命令行
+# SiteServer CMS 招聘插件
 
-本文档旨在全面介绍 SiteServer 命令行工具，版本6.2.4。
+<img src="logo.svg" width="360" height="360" />
 
-## 什么是 SiteServer 命令行工具？
+本文档旨在全面介绍 SS.Jobs - SiteServer CMS 招聘插件。
 
-SiteServer 命令行工具（SiteServer Cli）是一个可执行的exe文件（siteserver.exe），需要单独下载，可以放到任意文件夹中，通过命令行执行。
+招聘插件（SS.Jobs）是一个简单的，轻量级的插件，用于在你的 SiteServer CMS 站点中添加发布招聘信息的功能，同时插件通过STL标签将招聘信息发布到页面中。
 
-使用 SiteServer 命令行工具的主要目的是执行一些基础性的功能，如一键备份、一键还原、6.0版本之前的系统升级到最新版本以及切换系统至不同类型的数据库等功能。
+## 源代码
 
-- 备份命令：`siteserver backup`，用于数据备份
-- 恢复命令：`siteserver restore`，用于数据恢复
-- 升级命令：`siteserver update`，用于6.0版本之前的系统升级到最新版本
-- 版本命令：`siteserver version`，用于查看版本及数据库信息
+您可以在 [SS.Jobs 源码仓库](https://github.com/siteserver/ss.jobs) 中查看并获取招聘插件最新源代码。
+
+## 数据库表
+
+招聘信息存储在数据库表 **ss_jobs** 中。
 
 ## 帮助与支持
 
-如果使用命令行遇到问题，您可以在SiteServer CMS 源码仓库[讨论区发言](https://github.com/siteserver/cms/issues)，获取及时回复。
+如果使用招聘插件遇到问题，您可以在 [SiteServer CMS 论坛](https://github.com/siteserver/cms/issues) 中留言，我们将及时回复。

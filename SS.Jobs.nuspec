@@ -7,7 +7,7 @@
     <authors>SiteServer CMS</authors>
     <owners>siteserver</owners>
     <licenseUrl>https://github.com/siteserver/SS.Jobs/blob/master/LICENSE</licenseUrl>
-    <projectUrl>https://github.com/siteserver/SS.Jobs</projectUrl>
+    <projectUrl>https://plugins.siteserver.cn/ss.jobs/</projectUrl>
     <iconUrl>https://plugins.siteserver.cn/ss.jobs/logo.svg</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>发布招聘信息</description>
