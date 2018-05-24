@@ -1,2 +1,1 @@
-# SS.Jobs
-SiteServer CMS 招聘插件
+# SiteServer CMS 招聘插件
