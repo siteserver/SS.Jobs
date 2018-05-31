@@ -35,23 +35,16 @@
     <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="SiteServer.Plugin, Version=1.6.56.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>packages\SiteServer.Plugin.1.6.56-beta\lib\net45\SiteServer.Plugin.dll</HintPath>
+    <Reference Include="SiteServer.Plugin, Version=1.7.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\SiteServer.Plugin.1.7.0\lib\net45\SiteServer.Plugin.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Web" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Main.cs" />
-    <Compile Include="Model\JobAttribute.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Provider\JobDao.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
