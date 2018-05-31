@@ -35,8 +35,8 @@
     <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="SiteServer.Plugin, Version=1.7.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>packages\SiteServer.Plugin.1.7.0\lib\net45\SiteServer.Plugin.dll</HintPath>
+    <Reference Include="SiteServer.Plugin, Version=1.7.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\SiteServer.Plugin.1.7.1\lib\net45\SiteServer.Plugin.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -47,7 +47,24 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="docs\background.md" />
+    <None Include="docs\foreground.md" />
+    <None Include="docs\install.md" />
+    <None Include="docs\README.md" />
+    <None Include="docs\_sidebar.md" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="docs\assets\background\01.png" />
+    <Content Include="docs\assets\background\02.png" />
+    <Content Include="docs\assets\background\03.png" />
+    <Content Include="docs\assets\favicon.png" />
+    <Content Include="docs\assets\install\01.png" />
+    <Content Include="docs\assets\install\02.png" />
+    <Content Include="docs\assets\install\03.png" />
+    <Content Include="docs\assets\install\04.png" />
+    <Content Include="docs\index.html" />
+    <Content Include="docs\logo.svg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
