@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using Datory;
 using SiteServer.Plugin;
 
 namespace SS.Jobs
@@ -19,60 +20,62 @@ namespace SS.Jobs
                 {
                     AttributeName = Department,
                     DataType = DataType.VarChar,
-                    DataLength = 200,
-                    InputStyle = new InputStyle
-                    {
-                        InputType = InputType.Text,
-                        DisplayName = "所属部门",
-                        IsRequired = true
-                    }
+                    DataLength = 200
                 },
                 new TableColumn
                 {
                     AttributeName = Location,
                     DataType = DataType.VarChar,
-                    DataLength = 200,
-                    InputStyle = new InputStyle
-                    {
-                        InputType = InputType.Text,
-                        DisplayName = "工作地点",
-                        IsRequired = true
-                    }
+                    DataLength = 200
                 },
                 new TableColumn
                 {
                     AttributeName = NumberOfPeople,
                     DataType = DataType.VarChar,
-                    DataLength = 200,
-                    InputStyle = new InputStyle
-                    {
-                        InputType = InputType.Text,
-                        DisplayName = "招聘人数",
-                        IsRequired = true,
-                        DefaultValue = "不限"
-                    }
+                    DataLength = 200
                 },
                 new TableColumn
                 {
                     AttributeName = Responsibility,
-                    DataType = DataType.Text,
-                    InputStyle = new InputStyle
-                    {
-                        InputType = InputType.TextEditor,
-                        DisplayName = "工作职责",
-                        IsRequired = true
-                    }
+                    DataType = DataType.Text
                 },
                 new TableColumn
                 {
                     AttributeName = Requirement,
-                    DataType = DataType.Text,
-                    InputStyle = new InputStyle
-                    {
-                        InputType = InputType.TextEditor,
-                        DisplayName = "工作要求",
-                        IsRequired = true
-                    }
+                    DataType = DataType.Text
+                }
+            }, new List<InputStyle>
+            {
+                new InputStyle
+                {
+                    InputType = InputType.Text,
+                    DisplayName = "所属部门",
+                    IsRequired = true
+                },
+                new InputStyle
+                {
+                    InputType = InputType.Text,
+                    DisplayName = "工作地点",
+                    IsRequired = true
+                },
+                new InputStyle
+                {
+                    InputType = InputType.Text,
+                    DisplayName = "招聘人数",
+                    IsRequired = true,
+                    DefaultValue = "不限"
+                },
+                new InputStyle
+                {
+                    InputType = InputType.TextEditor,
+                    DisplayName = "工作职责",
+                    IsRequired = true
+                },
+                new InputStyle
+                {
+                    InputType = InputType.TextEditor,
+                    DisplayName = "工作要求",
+                    IsRequired = true
                 }
             });
         }

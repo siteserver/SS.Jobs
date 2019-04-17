@@ -1,82 +1,33 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{83D7EFC9-6429-4C38-BCE2-A660DAAD7D70}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SS.Jobs</RootNamespace>
-    <AssemblyName>SS.Jobs</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
-    <NuGetPackageImportStamp>
-    </NuGetPackageImportStamp>
+    <TargetFrameworks>net452</TargetFrameworks>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <PackageId>SS.Jobs</PackageId>
+    <Version>1.0.0</Version>
+    <Title>招聘插件</Title>
+    <PackageVersion>1.0.0</PackageVersion>
+    <Authors>SiteServer CMS</Authors>
+    <Company>SiteServer CMS</Company>
+    <Product></Product>
+    <Description>SiteServer CMS 招聘插件</Description>
+    <PackageLicenseUrl>https://github.com/siteserver/SS.Jobs/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/siteserver/SS.Jobs</PackageProjectUrl>
+    <PackageIconUrl>https://www.siteserver.cn/SS.Jobs/logo.svg</PackageIconUrl>
+    <Copyright>Copyright © SiteServer CMS</Copyright>
+    <PackageTags>SiteServer CMS Jobs Plugin</PackageTags>
+    <RepositoryUrl>https://github.com/siteserver/SS.Jobs</RepositoryUrl>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageReleaseNotes></PackageReleaseNotes>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>bin\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>bin\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup>
-    <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
-  </PropertyGroup>
+
   <ItemGroup>
-    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="SiteServer.Plugin, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>packages\SiteServer.Plugin.2.1.0\lib\net45\SiteServer.Plugin.dll</HintPath>
-    </Reference>
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="Microsoft.CSharp" />
+    <PackageReference Include="Microsoft.AspNet.WebApi.Core" Version="5.2.7" />
+    <PackageReference Include="SiteServer.Plugin" Version="2.3.4" />
   </ItemGroup>
+
   <ItemGroup>
-    <Compile Include="Main.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Reference Include="System.Web" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="docs\background.md" />
-    <None Include="docs\foreground.md" />
-    <None Include="docs\install.md" />
-    <None Include="docs\README.md" />
-    <None Include="docs\_sidebar.md" />
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="docs\assets\background\01.png" />
-    <Content Include="docs\assets\background\02.png" />
-    <Content Include="docs\assets\background\03.png" />
-    <Content Include="docs\assets\favicon.png" />
-    <Content Include="docs\assets\install\01.png" />
-    <Content Include="docs\assets\install\02.png" />
-    <Content Include="docs\assets\install\03.png" />
-    <Content Include="docs\assets\install\04.png" />
-    <Content Include="docs\index.html" />
-    <Content Include="docs\logo.svg" />
-  </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <PropertyGroup>
-    <PostBuildEvent>
-    </PostBuildEvent>
-  </PropertyGroup>
-  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
-    <PropertyGroup>
-      <ErrorText>此项目引用这台计算机上缺少的 NuGet 程序包。使用 NuGet 程序包还原可下载这些程序包。有关详细信息，请参阅 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
-    </PropertyGroup>
-  </Target>
+
 </Project>

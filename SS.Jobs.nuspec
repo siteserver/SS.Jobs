@@ -7,12 +7,12 @@
     <authors>SiteServer CMS</authors>
     <owners>siteserver</owners>
     <licenseUrl>https://github.com/siteserver/SS.Jobs/blob/master/LICENSE</licenseUrl>
-    <projectUrl>https://plugins.siteserver.cn/ss.jobs/</projectUrl>
-    <iconUrl>https://plugins.siteserver.cn/ss.jobs/logo.svg</iconUrl>
+    <projectUrl>https://github.com/siteserver/SS.Jobs/</projectUrl>
+    <iconUrl>https://www.siteserver.cn/docs/ss.jobs/logo.svg</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>发布招聘信息</description>
     <releaseNotes>Summary of changes made in this release of the package.</releaseNotes>
-    <copyright>Copyright 2018</copyright>
+    <copyright>Copyright © SiteServer CMS</copyright>
     <tags>SiteServer CMS Jobs Plugin</tags>
   </metadata>
   <files>
