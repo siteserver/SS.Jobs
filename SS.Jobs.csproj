@@ -10,10 +10,10 @@
     <Authors>SiteServer CMS</Authors>
     <Company>SiteServer CMS</Company>
     <Product></Product>
-    <Description>SiteServer CMS 招聘插件</Description>
-    <PackageLicenseUrl>https://github.com/siteserver/SS.Jobs/blob/master/LICENSE</PackageLicenseUrl>
+    <Description>发布招聘信息</Description>
+    <PackageLicense>GPL-3.0</PackageLicense>
     <PackageProjectUrl>https://github.com/siteserver/SS.Jobs</PackageProjectUrl>
-    <PackageIconUrl>https://www.siteserver.cn/SS.Jobs/logo.svg</PackageIconUrl>
+    <PackageIconUrl>https://www.siteserver.cn/docs/SS.Jobs/logo.svg</PackageIconUrl>
     <Copyright>Copyright © SiteServer CMS</Copyright>
     <PackageTags>SiteServer CMS Jobs Plugin</PackageTags>
     <RepositoryUrl>https://github.com/siteserver/SS.Jobs</RepositoryUrl>
@@ -22,12 +22,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNet.WebApi.Core" Version="5.2.7" />
-    <PackageReference Include="SiteServer.Plugin" Version="2.3.4" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Reference Include="System.Web" />
+    <PackageReference Include="SiteServer.Plugin" Version="2.3.6" />
   </ItemGroup>
 
 </Project>
