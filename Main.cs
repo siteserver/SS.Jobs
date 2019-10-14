@@ -50,18 +50,21 @@ namespace SS.Jobs
                     new InputStyle
                     {
                         InputType = InputType.Text,
+                        AttributeName = Department,
                         DisplayName = "所属部门",
                         IsRequired = true
                     },
                     new InputStyle
                     {
                         InputType = InputType.Text,
+                        AttributeName = Location,
                         DisplayName = "工作地点",
                         IsRequired = true
                     },
                     new InputStyle
                     {
                         InputType = InputType.Text,
+                        AttributeName = NumberOfPeople,
                         DisplayName = "招聘人数",
                         IsRequired = true,
                         DefaultValue = "不限"
@@ -69,12 +72,14 @@ namespace SS.Jobs
                     new InputStyle
                     {
                         InputType = InputType.TextEditor,
+                        AttributeName = Responsibility,
                         DisplayName = "工作职责",
                         IsRequired = true
                     },
                     new InputStyle
                     {
                         InputType = InputType.TextEditor,
+                        AttributeName = Requirement,
                         DisplayName = "工作要求",
                         IsRequired = true
                     }
