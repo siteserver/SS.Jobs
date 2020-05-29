@@ -13,7 +13,7 @@
     <Description>发布招聘信息</Description>
     <PackageLicense>GPL-3.0</PackageLicense>
     <PackageProjectUrl>https://github.com/siteserver/SS.Jobs</PackageProjectUrl>
-    <PackageIconUrl>https://www.siteserver.cn/docs/ss/jobs/logo.svg</PackageIconUrl>
+    <PackageIconUrl>https://storage.sscms.com/plugins/ss.jobs/logo.svg</PackageIconUrl>
     <Copyright>Copyright © SiteServer CMS</Copyright>
     <PackageTags>SiteServer CMS Jobs Plugin</PackageTags>
     <RepositoryUrl>https://github.com/siteserver/SS.Jobs</RepositoryUrl>
@@ -22,7 +22,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="SiteServer.Plugin" Version="2.3.11" />
+    <PackageReference Include="SiteServer.Plugin" Version="2.3.15" />
   </ItemGroup>
 
 </Project>
